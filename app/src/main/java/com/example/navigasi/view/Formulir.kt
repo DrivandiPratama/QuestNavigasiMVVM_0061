@@ -52,6 +52,21 @@ fun FormIsian(
                 label = {Text(text = "Nama Lengkap")},
                 onValueChange = {},
             )
+            HorizontalDivider(modifier = Modifier
+                .padding(20.dp
+                    .width(250.dp), thickness = Thickness,color = Color.Red)
+            Row{
+                jenisK.forEach {
+                    item->
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        RadioButton(
+                            selected = False,
+                            onClick = {item}
+                        )
+                        Text(text = item)
+                    }
+                }
+            })
 
     }
 }
